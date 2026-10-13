@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Maple Street Bakery</title>
+</head>
+<body>
+  <header>
+     <img src = "images/logo.svg" alt="Logo, Maple Street Bakery &amp; Cafe" width=200 height=200>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <article>
+      <section>
+        <h1>Welcome to Maple Street Bakery &amp; Cafe</h1>
+        <p>Step inside, take a deep breath, and make yourself at home. Founded on a love for simple ingredients and time-honored baking traditions, our neighborhood bakery is a gathering place built around the comfort of fresh-baked goods. Whether you’re stopping in for your morning espresso, a warm pastry, or a loaf of bread straight from the oven, we’re honored to be a part of your daily routine.</p>
+        <figure>
+          <img src="images/cinamon_bun.jpg" alt="A tray of cinnamon buns with white glaze" width=300 height=300>
+          <figcaption>
+            Photo by <a href="https://unsplash.com/@anitaaustvika?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anita Austvika</a> on <a href="https://unsplash.com/photos/a-basket-of-cinnamon-rolls-j-rjB4GF67c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </figcaption>
+        </figure>
+      </section>
+      <article>
+        <h2>Try Our Award Winning Sourdough</h2>
+        <p>Every great loaf begins with patience, passion, and a little bit of magic. Baked daily using our wild starter and locally sourced flour, our signature sourdough undergoes a slow, natural fermentation process. This traditional method gives each loaf its distinctive crackly, deep-golden crust, airy interior, and complex, rich flavor profile.
+
+          It’s this dedication to the slow-food process that earned us top honors at the Regional Bread Guild Awards. But while accolades are wonderful, our favorite award will always be seeing a hot, freshly sliced loaf on your family’s dinner table.</p>
+        <figure>
+          <img src="images/sourdough.jpg" alt="Two loaves of sourdough in a paper bag" width=300 height=300>
+          <figcaption>
+            Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/photos/a-piece-of-wood-39-6dSUrlyg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <h2>Catering requests</h2>
+        <p>Bringing people together is what we do best. From cozy family gatherings and morning office meetings to weekend celebrations, let us supply the pastries, savory bakes, and artisan breads for your next event.
+
+          Planning an gathering? Explore our catering menu and submit a request below, or speak with our team directly—we’d love to help make your event unforgettable.</p>
+        <figure>
+          <img src="images/catering_2.jpg" alt="A miniature pie with torched cream on top" width=300 height=300>
+          <figcaption>Photo by <a href="https://unsplash.com/@quinterocamilaa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Camila Quintero Franco</a> on <a href="https://unsplash.com/photos/baked-pastries-mji7CTMZ4hA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+        </figure>
+        <form action="/submit" method="POST">
+          <fieldset>
+            <legend>Catering Inquiries</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Tell us what you have in mind</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+          </fieldset>
+
+        </form>
+      </article>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2026 Maple Street Baker & Cafe</p>
+  </footer>
+</body>
+</html>
