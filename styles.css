@@ -1,0 +1,293 @@
+:root {
+    font-size: 16px;
+
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3a2c1c;
+    background-color: #FCF8ED;
+}
+body :focus-visible{
+    outline-color: #543006;
+    outline-width: 4px;
+}
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #03314b;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #03314b;
+    background-color: #FCF8ED;
+}
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+nav img{
+    width: 200px;
+    height: 150px;
+}
+#home-hero{
+    background-image:
+            linear-gradient(rgb(252 248 237 / 0.8), rgb(252 248 237 / 0.8)),
+            url("images/cinamon_bun.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100svh;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 40px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.content figure {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+.content figure img {
+    max-height:500px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+nav ul li {
+    margin-right: 1rem;
+
+}
+
+nav ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-header .hero p {
+    max-width: 700px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+a {
+    font-weight: 500;
+    color: rgb(113 10 75 / 0.7);
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 40px;
+    gap: 40px;
+    width: 90%;
+}
+
+main header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main p {
+    text-align: left;
+    max-width: 700px;
+}
+
+.content figure img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    color: #FCF8ED;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #710a4b;
+    padding: 16px 24px;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: .8rem;
+}
+form{
+    max-width: 700px;
+    min-width: 50%;
+}
+fieldset {
+     display: flex;
+     flex-direction: column;
+     justify-content: right;
+     align-items: center;
+     padding: 16px;
+     border-radius: 8px;
+ }
+
+legend {
+    color: #03314b;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+caption {
+    color: #543006;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 16px;
+}
+
+.form-group label {
+    flex: 1;
+    color: #03314b;
+    margin: 8px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    flex: 2;
+    color: #FCF8ED;
+    border: #543006 1px solid;
+    border-radius: 6px;
+}
+
+#custom-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group textarea {
+    width: 100%;
+    height: 3rem;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+
+}
+
+table th {
+    font-weight: 500;
+    margin: 16px;
+}
+
+@media (min-width: 900px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin: auto;
+    }
+
+    .content figure {
+        flex: 1;
+        width: 50%;
+
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    .main-header .hero p {
+        max-width: 700px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+}
+

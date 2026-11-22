@@ -4,65 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - Maple Street Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-     <img src = "images/logo.svg" alt="Logo, Maple Street Bakery &amp; Cafe" width=200 height=200>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-        </ul>
-      </nav>
-  </header>
-  <main>
-    <article>
-        <h1>Welcome to Maple Street Bakery &amp; Cafe</h1>
-        <p>Step inside, take a deep breath, and make yourself at home. Founded on a love for simple ingredients and time-honored baking traditions, our neighborhood bakery is a gathering place built around the comfort of fresh-baked goods. Whether you’re stopping in for your morning espresso, a warm pastry, or a loaf of bread straight from the oven, we’re honored to be a part of your daily routine.</p>
-        <figure>
-          <img src="images/cinamon_bun.jpg" alt="A tray of cinnamon buns with white glaze" width=300 height=300>
-          <figcaption>
-            Photo by Anita Austvika on <a href="https://unsplash.com/photos/a-basket-of-cinnamon-rolls-j-rjB4GF67c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-          </figcaption>
-        </figure>
-      <article>
-        <h2>Try Our Award Winning Sourdough</h2>
-        <p>Every great loaf begins with patience, passion, and a little bit of magic. Baked daily using our wild starter and locally sourced flour, our signature sourdough undergoes a slow, natural fermentation process. This traditional method gives each loaf its distinctive crackly, deep-golden crust, airy interior, and complex, rich flavor profile.
+    <header class="main-header" id="home-hero">
+        <nav>
+            <img src = "images/logo.svg" alt="Logo, Maple Street Bakery &amp; Cafe" width=250
+                 height=200>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
 
-          It’s this dedication to the slow-food process that earned us top honors at the Regional Bread Guild Awards. But while accolades are wonderful, our favorite award will always be seeing a hot, freshly sliced loaf on your family’s dinner table.</p>
+      <div class = "hero">
+          <h1>Welcome to Maple Street Bakery &amp; Cafe</h1>
+          <p>Step inside, take a deep breath, and make yourself at home. Founded on a love for simple ingredients and time-honored baking traditions, our neighborhood bakery is a gathering place built around the comfort of fresh-baked goods. Whether you’re stopping in for your morning espresso, a warm pastry, or a loaf of bread straight from the oven, we’re honored to be a part of your daily routine.</p>
+      </div>
+    </header>
+  <main>
+      <article class = "content">
+          <header>
+            <h2>Try Our Award Winning Sourdough</h2>
+            <p>Every great loaf begins with patience, passion, and a little bit of magic. Baked daily using our wild starter and locally sourced flour, our signature sourdough undergoes a slow, natural fermentation process. This traditional method gives each loaf its distinctive crackly, deep-golden crust, airy interior, and complex, rich flavor profile.
+          <p>It’s this dedication to the slow-food process that earned us top honors at the Regional Bread Guild Awards. But while accolades are wonderful, our favorite award will always be seeing a hot, freshly sliced loaf on your family’s dinner table.</p>
+          </header>
         <figure>
-          <img src="images/sourdough.jpg" alt="Two loaves of sourdough in a paper bag" width=300 height=300>
+          <img src="images/sourdough.jpg" alt="Two loaves of sourdough in a paper bag" width="800px" height="600px">
           <figcaption>
-            Photo by Markus Spiske on <a href="https://unsplash.com/photos/a-piece-of-wood-39-6dSUrlyg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by Markus Spiske on <a href="https://unsplash.com/photos/a-piece-of-wood-39-6dSUrlyg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" >Unsplash</a>
           </figcaption>
         </figure>
       </article>
       <article>
-        <h2>Catering requests</h2>
-        <p>Bringing people together is what we do best. From cozy family gatherings and morning office meetings to weekend celebrations, let us supply the pastries, savory bakes, and artisan breads for your next event.
-
-          Planning an gathering? Explore our catering menu and submit a request below, or speak with our team directly—we’d love to help make your event unforgettable.</p>
-        <figure>
-          <img src="images/catering_2.jpg" alt="A miniature pie with torched cream on top" width=300 height=300>
-          <figcaption>Photo by Camila Quintero Franco on <a href="https://unsplash.com/photos/baked-pastries-mji7CTMZ4hA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
-        </figure>
+          <section class="content">
+              <header>
+                <h2>Catering requests</h2>
+                <p>Bringing people together is what we do best. From cozy family gatherings and morning office meetings to weekend celebrations, let us supply the pastries, savory bakes, and artisan breads for your next event.</p>
+              <p>Planning an gathering? Explore our catering menu and submit a request below, or speak with our team directly—we’d love to help make your event unforgettable.</p>
+              </header>
+              <figure>
+                  <img src="images/catering_2.jpg" alt="A miniature pie with torched cream on top" width="800px" height="600px">
+                  <figcaption>Photo by Camila Quintero Franco on <a href="https://unsplash.com/photos/baked-pastries-mji7CTMZ4hA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
+              </figure>
+          </section>
         <form action="/submit" method="POST">
           <fieldset>
             <legend>Catering Inquiries</legend>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
-            <label for="message">Tell us what you have in mind</label>
-            <textarea id="message" name="message" required></textarea>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group" id="custom-message">
+                <label for="message">Tell us what you have in mind</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
             <button type="submit">Submit</button>
           </fieldset>
-
         </form>
       </article>
-    </article>
   </main>
   <footer>
     <p>&copy; 2026 Maple Street Baker & Cafe</p>
