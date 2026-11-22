@@ -11,7 +11,7 @@ body{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #3a2c1c;
+    color: #543006;
     background-color: #FCF8ED;
 }
 body :focus-visible{
@@ -22,14 +22,14 @@ h1 {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    color: #03314b;
+    color: #05466B;
     background-color: #FCF8ED;
 }
 
 h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #03314b;
+    color: #05466B;
     background-color: #FCF8ED;
 }
 .main-header{
@@ -125,7 +125,7 @@ header {
 
 a {
     font-weight: 500;
-    color: #710a4b;
+    color: #7F0B54;
     background-color: #FCF8ED;
     text-decoration: none;
 }
@@ -167,7 +167,7 @@ button {
     border: none;
     font-size: 1.2rem;
     font-weight: 500;
-    background-color: #710a4b;
+    background-color: #7F0B54;
     padding: 16px 24px;
     border-radius: 8px;
 }
@@ -184,14 +184,16 @@ fieldset {
      flex-direction: column;
      justify-content: right;
      align-items: center;
-     padding: 16px;
-     border-radius: 8px;
+     padding: 24px;
+     border: #543006 2px solid;
+    border-radius: 6px;
+
  }
 
 legend {
-    color: #03314b;
+    color: #05466B;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 caption {
@@ -218,8 +220,9 @@ caption {
 
 .form-group input {
     flex: 2;
-    color: #FCF8ED;
-    border: #543006 1px solid;
+    color: #543006;
+    background-color: #fdfbf5;
+    border: #543006 2px solid;
     border-radius: 6px;
 }
 
@@ -232,6 +235,9 @@ caption {
     width: 100%;
     height: 3rem;
     border-radius: 6px;
+    border: #543006 2px solid;
+    color: #543006;
+    background-color: #fdfbf5;
 }
 
 table {
@@ -285,6 +291,17 @@ table th {
     nav ul li a {
         font-size: 1.2rem;
         font-weight: 600;
+    }
+    legend {
+        color: #05466B;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    caption {
+        color: #543006;
+        font-weight: 500;
+        font-size: 1.2rem;
     }
 
 }
